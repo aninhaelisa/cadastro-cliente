@@ -1,6 +1,8 @@
+const express = require('express');
+const app = express();
 const PORT = 3000;
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('publico'));
 app.get('/api', (req, res) => {
     res.json({
         mensagem: 'API de clientes funcionando!'
