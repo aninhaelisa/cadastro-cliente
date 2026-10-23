@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro clientes | RELATÓRIO</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="hc1">
+            <a href="../index.html"><img src="../src/icon.png" alt="imagem Logo cadastro rosa" class="logo"></a>
+            <h1>Cadastro Clientes</h1>
+        </div>
+
+        <nav class="menu">
+            <button class="hamburguer" id="botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="lista" id="lista">
+                <li><a href="lista.html">Lista Clientes</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="relatorio.html">Relatórios</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="relatorio-titulos">
+            <h1>Relatório de Clientes</h1>
+            <p id="gerado-em"></p>
+
+            <button class="nao-imprimir" onclick="window.print()">
+                Imprimir / Salvar PDF
+            </button>
+        </div>
+        <section class="resumo">
+            <div class="card">
+                <h3>Total de clientes</h3>
+                <p id="total">Carregando...</p>
+            </div>
+
+            <div class="card">
+                <h3>Cadastros de hoje</h3>
+                <p id="hoje">Carregando...</p>
+            </div>
+
+            <div class="card">
+                <h3>Cadastros deste mês</h3>
+                <p id="mes">Carregando...</p>
+            </div>
+        </section>
+
+        <h2>Detalhamento dos cadastros</h2>
+
+        <p id="mensagem">Carregando relatório...</p>
+
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>CPF</th>
+                        <th>Data</th>
+                        <th>CEP</th>
+                        <th>Rua</th>
+                        <th>Número</th>
+                        <th>Complemento</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Data de criação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="clientes"></tbody>
+            </table>
+        </div>
+
+
+        <div class="img-relatorio">
+            <a href="https://www.instagram.com/aninhamesm0_/"><img src="../src/img_relatorio.jpg"></a>
+        </div>
+
+    </main>
+    <footer>
+        <h2>Cadastro de Clientes</h2>
+        <p>Organize seus clientes de forma simples e prática.</p>
+
+        <p class="copyright">
+            &copy; 2026 Cadastro de Clientes.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="js/relatorio.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
