@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-titulos: #F8C8DC;
+    --cor-titulos: #f1619d;
     --cor-botton: #C985A7;
     --cor-link: palevioletred;
     --cor-fundo-cinza: rgb(37, 37, 37);
@@ -165,10 +165,104 @@ header {
     }
 }
 
+/*MAIN SECTION ---------------------------------------*/
+main{
+    width: 100%;
+}
+
+section{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*FORMULARIO---------------------------------------*/
 
+form {
+    width: 100%;
+    max-width: 35em;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-rosa);
+    padding: 1em;
+    font-family: var(--fonte-texto-normal);
+    color: var(--cor-texto-normal);
+}
+
 fieldset{
+    display: flex;
     border: none;
     padding: 0;
     margin: 0;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+legend {
+    padding: 0.5em 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor-titulos);
+    font-size: 1.3em;
+    font-family: var(--fonte-texto-titulo);
+}
+
+input, textarea{
+    padding: 0.5em;
+    border: 1px solid var(--cor-link);
+    border-radius: 4px;
+    background-color: var(--cor-fundo-rosa);
+    margin: 0.5em 0;
+    border-bottom-color: var(--cor-botton);
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+button{
+    padding: 10px;
+    background-color: var(--cor-link);
+    border: none;
+    font-family: var(--fonte-texto-titulo);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color: #f1619d;
+    transform: scale(1.05);
+}
+
+/*FOOTER---------------------------------------*/
+footer{
+    width: 100%;
+    background-color: var(--cor-fundo-rosa);
+    color: var(--cor-texto-normal);
+    font-family: var(--fonte-texto-normal);
+    padding: 10px 30px;
+    text-align: end;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+footer h2{
+    color: var(--cor-titulos);
+    font-family: var(--fonte-texto-titulo);
+    margin-bottom: 10px;
 }
