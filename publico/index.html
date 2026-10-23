@@ -23,7 +23,7 @@
                 <span></span>
                 <span></span>
             </button>
-        
+
             <ul class="lista" id="lista">
                 <li><a href="#">Lista Clientes</a></li>
                 <li><a href="#">Suporte</a></li>
@@ -38,25 +38,69 @@
         <section class="s1">
 
             <form action="/dados" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="NOME COMPLETO" required>
-              
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="exemplo123@email.com" required>
+                <fieldset>
+                    <legend>Dados de Contato:</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="NOME COMPLETO" required>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="tel" name="tel" placeholder="(00) 0000-0000" maxlength="15"  pattern="\(\d{2}\) (\d{5}-\d{4}|\d{4}-\d{4})" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo123@email.com" required>
 
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
-              
-                <button type="submit">Enviar</button>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="(00) 0000-0000" maxlength="15"
+                        pattern="\(\d{2}\) (\d{5}-\d{4}|\d{4}-\d{4})" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="15"
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de Endereço</legend>
+
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                    </div>
+
+                    <div>
+                        <label for="rua">Logradouro (Rua/Avenida):</label>
+                        <input type="text" id="rua" name="rua" required>
+                    </div>
+
+                    <div>
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+
+                    <div>
+                        <label for="complemento">Complemento (opcional):</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, etc.">
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado (UF):</label>
+                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="PR" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar dados</button>
             </form>
+
 
         </section>
 
     </main>
-    
+
 
     <script src="script.js"></script>
 </body>

@@ -35,6 +35,8 @@ body {
     flex-direction: column;
 }
 
+/*HEADER---------------------------------------*/
+
 header {
     background-color: var(--cor-fundo-rosa);
     width: 100%;
@@ -63,6 +65,8 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+/*MENU---------------------------------------*/
 
 .menu {
     position: relative;
@@ -159,4 +163,12 @@ header {
     .hamburguer {
         display: none;
     }
+}
+
+/*FORMULARIO---------------------------------------*/
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
 }
